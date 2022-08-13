@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function sumAllDigitsUntilOneDigit(n){
+
+    while (n > 9){
+
+      let digit = n, sum = 0;
+
+      while (digit > 0){
+
+        sum +=  Math.floor(digit % 10);
+        digit /= 10;
+
+      }
+      document.write(Math.floor(sum).toString());
+
+      n = sum;
+    }
+  }
+
+  sumAllDigitsUntilOneDigit(797897);
+</script>
+</body>
+</html>

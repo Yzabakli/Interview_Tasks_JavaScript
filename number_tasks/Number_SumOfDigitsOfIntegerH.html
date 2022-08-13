@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+
+  let n = 1234;
+
+  function getSum(n) {
+    let sum = 0;
+
+    while (n > 0) {
+
+      sum = sum + n % 10;
+      n = Math.floor(n / 10);
+    }
+    return sum;
+  }
+
+  document.write(getSum(n));
+</script>
+</body>
+</html>

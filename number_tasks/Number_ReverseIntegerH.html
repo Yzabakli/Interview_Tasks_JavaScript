@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Number_ReverseInteger</title>
+</head>
+<body>
+<script>
+  function reverseInteger(num){
+
+    let temp = 0;
+
+    while (Math.floor(num) !== 0){
+
+      temp = temp * 10 + Math.floor(num % 10);
+      num /= 10;
+    }
+    return temp;
+  }
+  alert(reverseInteger(8913467913))
+</script>
+</body>
+</html>
