@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Number_Fibonacci</title>
+</head>
+<body>
+<script>
+    function fibonacci(number) {
+
+        let j = 0;
+        let z = 1;
+
+        for (let i = 1; i < number; i++) {
+
+            z += j;
+
+            j = z - j;
+        }
+        return z;
+    }
+    alert(fibonacci(10));
+</script>
+</body>
+</html>
